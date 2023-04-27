@@ -1,10 +1,18 @@
-const MyFirstObject = {
+const MyFirstApp = {
     data() {
         return{
-            name: "Lucas Fernando",
-            office: "Front-End Jr. Developer"
+            name: "",
+            office: "Front-End Jr. Developer",
+            input_name: ""
         }
-    }
+    },
+    methods: {
+        submitValue(e){
+            e.preventDefault();
+            
+            this.name = this.input_name;
+        }
+    },
 }
 
-Vue.createApp(MyFirstObject).mount("#app");
+Vue.createApp(MyFirstApp).mount("#app");

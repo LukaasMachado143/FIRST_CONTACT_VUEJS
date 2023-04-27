@@ -10,7 +10,17 @@
 </head>
 <body>
     <div id="app">
-        My name is: {{name}} and i am a new {{office}}.
+        <h3>Without using Data Binding </h3>
+        <p>My name is: {{name}} and i am a new {{office}} in the "Predify".</p>
+        <hr>
+        <form id="app-form">
+            <h3>Using Data Binding </h3>
+            <input type="text" v-model="input_name" placeholder="Type you name...">
+            <input type="submit" value="Show Data" v-on:click="submitValue">
+        </form>
+        <p>My name is: {{input_name}} and i am a new {{office}} in the "Predify".</p>    
     </div>
+
+
 </body>
 </html>
