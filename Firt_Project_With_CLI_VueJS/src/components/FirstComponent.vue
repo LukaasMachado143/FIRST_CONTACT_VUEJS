@@ -5,10 +5,5 @@
 <script>
     export default {
         name: "FirstComponent"
-
     }
 </script>
-
-<style>
-
-</style>
