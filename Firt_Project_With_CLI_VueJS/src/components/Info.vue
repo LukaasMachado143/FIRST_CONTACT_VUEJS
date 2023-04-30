@@ -22,7 +22,7 @@
                 <li>Python</li>
             </ul>
         </div>
-
+        <button @click="showPhoneNumberMethods">{{textButton}}</button>
         <p v-show="showPhoneNumber">Entre em contato através do número: {{ phoneNumber }}</p>
 
         <p>Para acessar o google <a v-bind:href="linkGoogle" target="_blank">clique aqui.</a></p>
@@ -43,8 +43,17 @@
                 showPhoneNumber: false,
                 phoneNumber: '(16) 99460-2891',
                 linkGoogle: 'https://www.google.com/',
+                textButton: 'Mostrar Contatos'
             }
-        }, 
+        },
+
+        methods: {
+            showPhoneNumberMethods(){
+                this.showPhoneNumber = !this.showPhoneNumber
+                if (this.showPhoneNumber){this.textButton = 'Ocultar Contatos'}
+                else{this.textButton = 'Mostrar Contatos'}
+            }
+        }
         
     }
 </script>
