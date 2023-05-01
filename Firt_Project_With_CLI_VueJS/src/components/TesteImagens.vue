@@ -1,9 +1,5 @@
 <template>
-    <div>
-        <img :src="linkImageAvatar" :alt="DescriptionImageAvatar">
-    </div>
-    
-
+    <img :src="linkImageAvatar" :alt="DescriptionImageAvatar">
 </template>
 
 <script>

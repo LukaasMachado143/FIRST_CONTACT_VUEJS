@@ -9,15 +9,17 @@
   import UsingHooks from './components/UsingHooks.vue';
   import ComponentHierarchy from './components/ComponentHierarchy.vue';
   import Info from './components/Info.vue';
-import TesteImagens from './components/TesteImagens.vue';
   export default{
     name: "App", 
     components:{
-    FirstComponentVue,
-    UsingHooks,
-    ComponentHierarchy,
-    Info,
-    TesteImagens
-}
+      FirstComponentVue,
+      UsingHooks,
+      ComponentHierarchy,
+      Info
+    }   
   }
 </script>
+
+<style>
+  
+</style>

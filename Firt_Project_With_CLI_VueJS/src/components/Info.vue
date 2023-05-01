@@ -22,9 +22,10 @@
                 <li>Python</li>
             </ul>
         </div>
-        <button @click="showPhoneNumberMethods">{{textButton}}</button>
-        <p v-show="showPhoneNumber">Entre em contato através do número: {{ phoneNumber }}</p>
-
+        <div>
+            <button @click="showPhoneNumberMethods">{{textButton}}</button>
+            <p v-show="showPhoneNumber">Entre em contato através do número: {{ phoneNumber }}</p>
+        </div>
         <p>Para acessar o google <a v-bind:href="linkGoogle" target="_blank">clique aqui.</a></p>
         
     </div>
@@ -34,7 +35,7 @@
     import TesteImagens from './TesteImagens.vue'
     export default{
         name:'Info',
-        component:{
+        components:{
             TesteImagens
         },
         data(){
@@ -57,3 +58,8 @@
         
     }
 </script>
+<!-- <style>
+    body{
+        background: linear-gradient(#e66465, #9198e5);
+    }
+</style> -->
