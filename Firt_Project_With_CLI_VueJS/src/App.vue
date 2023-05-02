@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ComponentHierarchy />
+    <StudingProps :titleGived="titleGived"/>
   </div>
 </template>
 
@@ -9,14 +9,21 @@
   import UsingHooks from './components/UsingHooks.vue';
   import ComponentHierarchy from './components/ComponentHierarchy.vue';
   import Info from './components/Info.vue';
+  import StudingProps from './components/StudingProps.vue';
+  
   export default{
     name: "App", 
     components:{
       FirstComponentVue,
       UsingHooks,
       ComponentHierarchy,
-      Info
-    }   
+      Info,
+      StudingProps
+    }, data(){
+      return{
+        titleGived: 'Aprendendo Props'
+      }
+    }  
   }
 </script>
 
@@ -32,12 +39,7 @@
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    border: solid;
-    border-color: transparent ;
     border-radius: 3rem;
     width: 20rem;
-  }
-  div:hover{
-    background-color: rgb(171, 171, 171);
   }
 </style>
