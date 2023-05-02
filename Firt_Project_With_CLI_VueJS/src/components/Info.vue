@@ -4,22 +4,20 @@
         <TesteImagens />
         <p><strong>Nome: </strong>Lucas Fernando</p>
         <div class="Front-End" v-if="toogleSpecialization">
-            <p><strong>Tecnologias programo como Dev Front-End:</strong></p>
+            <p><strong>Tecnologias que programo como Dev Front-End:</strong></p>
             <ul>
-                <li>Html</li>
-                <li>Css</li>
-                <li>Vue</li>
-                <li>React</li>
-                <li>Java</li>
+                <li v-for="(x, index) in frontEndTechnologies" :key="index">
+                    {{x }}
+                </li>
             </ul>
         </div>
         
         <div class="Back-End" v-else>
-            <p><strong>Tecnologias programo como Dev Back-End:</strong></p>
+            <p><strong>Tecnologias que programo como Dev Back-End:</strong></p>
             <ul>
-                <li>Asp Net Core</li>
-                <li>.Net</li>
-                <li>Python</li>
+                <li v-for="x in backEndTechnologies" :key="x.id">
+                    {{x.language}}
+                </li>
             </ul>
         </div>
         <div>
@@ -40,11 +38,18 @@
         },
         data(){
             return{
-                toogleSpecialization: false,
+                toogleSpecialization: true,
                 showPhoneNumber: false,
                 phoneNumber: '(16) 99460-2891',
                 linkGoogle: 'https://www.google.com/',
-                textButton: 'Mostrar Contatos'
+                textButton: 'Mostrar Contatos',
+                frontEndTechnologies: ['Html','Css','Vue','React','Java'],
+                backEndTechnologies: [
+                    {id: 1, language: 'Asp Net Core' },
+                    {id: 2, language: '.Net'},
+                    {id: 3, language: 'Pytohn'},
+                    {id: 4, language: 'C#'}
+                ]
             }
         },
 
@@ -59,7 +64,7 @@
     }
 </script>
 <style scoped>
-    h1{
+    h1, li{
         color: white;
     }
 </style>
