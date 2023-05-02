@@ -21,5 +21,7 @@
 </script>
 
 <style>
-  
+  body{
+    background-color: rgb(91, 91, 91);
+  }
 </style>

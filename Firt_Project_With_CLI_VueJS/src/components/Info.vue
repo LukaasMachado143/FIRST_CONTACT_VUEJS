@@ -58,8 +58,8 @@
         
     }
 </script>
-<!-- <style>
-    body{
-        background: linear-gradient(#e66465, #9198e5);
+<style scoped>
+    h1{
+        color: white;
     }
-</style> -->
+</style>
