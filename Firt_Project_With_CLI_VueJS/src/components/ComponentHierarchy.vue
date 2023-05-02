@@ -3,13 +3,9 @@
         <h1>Usando hierarquia de componetes</h1>
         <br>
         <h3>Mande uma mensagem:</h3>
-        <form>
+        <form @submit="SubmitData($event)">
             <Name />
-            <br>
-            <br>
             <Comments />
-            <br>
-            <br>
             <ButtonSubmit />
         </form>
     </div>
@@ -22,10 +18,21 @@
 
     export default {
         name: 'ComponentHierarchy',
+        data(){
+            return{
+                
+            }
+        },
         components:{
             Name,
             ButtonSubmit,
             Comments
+        }, 
+        methods:{
+            SubmitData(e){
+                e.preventDefault();
+                alert('Função criada com sucesso !!!')
+            }
         }
     }
 </script>

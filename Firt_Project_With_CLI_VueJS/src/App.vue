@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Info />
+    <ComponentHierarchy />
   </div>
 </template>
 
@@ -27,7 +27,7 @@
     box-sizing: border-box;
   }
   div{
-    background-color: rgb(87, 87, 87);
+    background-color: rgb(171, 171, 171);
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -36,5 +36,8 @@
     border-color: transparent ;
     border-radius: 3rem;
     width: 20rem;
+  }
+  div:hover{
+    background-color: rgb(171, 171, 171);
   }
 </style>

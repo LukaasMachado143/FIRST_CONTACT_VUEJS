@@ -64,6 +64,13 @@
     }
 </script>
 <style scoped>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: inline-block;
+        padding: 0.5rem;
+    }
     h1, li{
         color: white;
     }
