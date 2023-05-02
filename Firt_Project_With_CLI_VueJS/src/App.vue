@@ -1,6 +1,6 @@
 <template>
   <div>
-    <StudingProps :titleGived="titleGived"/>
+    <StudingEmit />
   </div>
 </template>
 
@@ -10,16 +10,19 @@
   import ComponentHierarchy from './components/ComponentHierarchy.vue';
   import Info from './components/Info.vue';
   import StudingProps from './components/StudingProps.vue';
+  import StudingEmit from './components/StudingEmit.vue';
   
   export default{
     name: "App", 
     components:{
-      FirstComponentVue,
-      UsingHooks,
-      ComponentHierarchy,
-      Info,
-      StudingProps
-    }, data(){
+    FirstComponentVue,
+    UsingHooks,
+    ComponentHierarchy,
+    Info,
+    StudingProps,
+    StudingEmit
+    }, 
+    data(){
       return{
         titleGived: 'Aprendendo Props'
       }

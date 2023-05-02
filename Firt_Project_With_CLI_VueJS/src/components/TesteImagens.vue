@@ -4,10 +4,12 @@
 
 <script>
     export default{
-        name: 'TesteImagens', 
+        name: 'TesteImagens',
+        props:{
+            linkImageAvatar: String
+        },
         data() {
             return {
-                linkImageAvatar: '/img/avatar.png',
                 DescriptionImageAvatar: 'Programador programando.'
             }
         },
