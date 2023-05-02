@@ -20,8 +20,21 @@
   }
 </script>
 
-<style>
-  body{
-    background-color: rgb(91, 91, 91);
+<style scoped>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  div{
+    background-color: rgb(87, 87, 87);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border: solid;
+    border-color: transparent ;
+    border-radius: 3rem;
+    width: 20rem;
   }
 </style>
